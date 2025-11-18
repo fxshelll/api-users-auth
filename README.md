@@ -20,24 +20,7 @@ Ideal para aplicações que exigem controle de acesso, login seguro e rotas prot
 
 ## Estrutura do Projeto
 
-📂 api-users-auth
- ┣ 📂 src
- ┃ ┣ 📂 config
- ┃ ┣ 📂 controllers
- ┃ ┣ 📂 middleware
- ┃ ┣ 📂 models
- ┃ ┣ 📂 routes
- ┃ ┣ 📂 services
- ┃ ┗ 📂 utils
- ┣ 📂 tests
- ┣ 📂 docs
- ┣ 📄 .env
- ┣ 📄 .gitignore
- ┣ 📄 Dockerfile
- ┣ 📄 docker-compose.yml
- ┣ 📄 README.md
- ┣ 📄 package.json
- ┗ 📄 swagger.yaml
+api-users-auth/ ┣ src/ ┃ ┣ config/ # Conexão com MongoDB ┃ ┣ controllers/ # Lógica das rotas ┃ ┣ middleware/ # Autenticação e autorização ┃ ┣ models/ # Modelos de dados (User) ┃ ┣ routes/ # Definição das rotas ┃ ┣ services/ # Regras de negócio ┃ ┗ utils/ # Funções auxiliares (hash, token) ┣ tests/ # Testes automatizados ┣ docs/ # Documentação adicional ┣ .env # Variáveis de ambiente ┣ .gitignore # Arquivos ignorados pelo Git ┣ Dockerfile # Configuração do container ┣ docker-compose.yml ┣ README.md # Manual do projeto ┣ package.json # Configuração do Node.js ┗ swagger.yaml # Documentação Swagger
 
 ## Tecnologias
 Node.js, Express, MongoDB (Mongoose), JWT, bcrypt, Swagger, Jest, Docker.

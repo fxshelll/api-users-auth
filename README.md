@@ -20,25 +20,25 @@ Ideal para aplicações que exigem controle de acesso, login seguro e rotas prot
 
 ## Estrutura do Projeto
 api-users-auth/
-├── 📂 src/                     # Código-fonte principal
-│   ├── 📂 config/              # Configuração da conexão com MongoDB
-│   ├── 📂 controllers/         # Funções que recebem as requisições HTTP
-│   ├── 📂 middleware/          # Middlewares de autenticação e autorização
-│   ├── 📂 models/              # Modelos de dados (ex: User)
-│   ├── 📂 routes/              # Definição das rotas da API
-│   ├── 📂 services/            # Regras de negócio (ex: login, cadastro)
-│   └── 📂 utils/               # Funções auxiliares (ex: hash de senha, JWT)
+├── src/                     # Código-fonte principal
+│   ├── config/              # Conexão com MongoDB
+│   ├── controllers/         # Funções que recebem as requisições HTTP
+│   ├── middleware/          # Autenticação e autorização
+│   ├── models/              # Modelos de dados (User)
+│   ├── routes/              # Definição das rotas da API
+│   ├── services/            # Regras de negócio (login, cadastro, etc.)
+│   └── utils/               # Funções auxiliares (hash de senha, JWT, etc.)
 │
-├── 📂 tests/                   # Testes automatizados com Jest e Supertest
-├── 📂 docs/                    # Documentação adicional (ex: diagramas, notas)
+├── tests/                   # Testes automatizados com Jest e Supertest
+├── docs/                    # Documentação adicional (Swagger, diagramas)
 │
-├── 📄 .env                     # Variáveis de ambiente (porta, URI, segredo JWT)
-├── 📄 .gitignore               # Arquivos e pastas ignorados pelo Git
-├── 📄 Dockerfile               # Configuração do container da API
-├── 📄 docker-compose.yml       # Orquestração dos containers (API + MongoDB)
-├── 📄 README.md                # Manual do projeto
-├── 📄 package.json             # Configuração do projeto Node.js
-└── 📄 swagger.yaml             # Documentação dos endpoints via Swagger
+├── .env                     # Variáveis de ambiente
+├── .gitignore               # Arquivos ignorados pelo Git
+├── Dockerfile               # Configuração do container da API
+├── docker-compose.yml       # Orquestração dos containers (API + MongoDB)
+├── README.md                # Manual do projeto
+├── package.json             # Configuração do projeto Node.js
+└── swagger.yaml             # Documentação dos endpoints via Swagger
 
 
 api-users-auth/ ┣ src/ ┃ ┣ config/ # Conexão com MongoDB ┃ ┣ controllers/ # Lógica das rotas ┃ ┣ middleware/ # Autenticação e autorização ┃ ┣ models/ # Modelos de dados (User) ┃ ┣ routes/ # Definição das rotas ┃ ┣ services/ # Regras de negócio ┃ ┗ utils/ # Funções auxiliares (hash, token) ┣ tests/ # Testes automatizados ┣ docs/ # Documentação adicional ┣ .env # Variáveis de ambiente ┣ .gitignore # Arquivos ignorados pelo Git ┣ Dockerfile # Configuração do container ┣ docker-compose.yml ┣ README.md # Manual do projeto ┣ package.json # Configuração do Node.js ┗ swagger.yaml # Documentação Swagger
